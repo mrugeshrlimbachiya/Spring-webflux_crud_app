@@ -1,0 +1,7 @@
+CREATE TABLE product IF NOT EXISTS (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL UNIQUE,
+    qty INTEGER NOT NULL DEFAULT 0,
+    price DECIMAL(10,2) NOT NULL,
+    CHECK (qty >= 0)
+);
