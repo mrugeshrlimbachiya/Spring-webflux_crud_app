@@ -3,6 +3,7 @@ package com.webflux_crud.webflux_crud.controller;
 
 import com.webflux_crud.webflux_crud.dto.ProductDto;
 import com.webflux_crud.webflux_crud.service.ProductService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
